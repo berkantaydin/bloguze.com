@@ -1,0 +1,17 @@
+language: python
+branches:
+  only:
+  - master
+install:
+- pip install pelican
+- pip install markdown
+- pip install ghp-import
+script:
+- make github
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+env:
+  global:
+    secure: Utx/pebX+ZgIMrjPGOgqIGaHUPWIfdLeuCQWk10S8js2tN6itOhUG8y9sBLoKF/ni29kLkqjiThoQUJMBqgmLNGnZKbg7/No3HRlKe1iEHlukHV2sG3k+kuGmwZS9Rr4+b0QM+2W7mbhGnVlx3WT8APo/HcbY1GVW4PXxB9TDBo=
